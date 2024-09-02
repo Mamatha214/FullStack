@@ -1,0 +1,193 @@
+css - cascading style sheet
+     it  has collection of only  property and values. it is to change look and feel of webpage
+     CSS is 4 types
+     1. inline css
+     2.internal css
+     3.external css
+     4. IMPORT CSS
+
+1.inline css
+       syntax
+         <tagname style="property:value; property2:value; property3:value;">contents</tagname>
+         exm:
+         <p style="color:red; font-size:40px;">Welcome to CSS</p>
+
+      ==>it is one to one(write css code 1 time use only 1 time)
+      =>due to code 1 to 1 duplicate will happen
+      =>duplicate code increse file weight
+      =>page take long time to load
+      =>server need more disk space
+      =>code modification take long time
+      =>digital marketing will not happening.
+
+2.internal css
+
+=> it is one to many(write once and use many times)
+
+syntax
+     select{
+      property1:value;
+      property2:value;
+      property3:value;
+     }
+
+=>  p{
+                color:red;
+                font-size:40px;
+                width:200px;
+                float:left;
+                margin:40px;
+                background:skyblue;
+            }
+        <p>Banglore</p>
+        <p>Banglore</p>
+        <p> Banglore</p>
+        <p> Banglore </p>
+
+        All The HTML Tags are called selector in CSS
+        -------------------------------------------
+
+the CSS has 6 ways to apply 1 to many Css code
+
+  1.tag selector
+
+     h3{
+                color:blue;
+                font-size:35px;
+                text-align:center;
+                width:33.33%;
+                float:left;
+            }
+
+      at the place of h3, it can be any html tag
+  ---------------------------------------------    
+  2.tag group selector
+   h1, h2, h3, h4, b, font{
+                color:white;
+                font-size: 40px;
+
+            }
+  3.ID selector
+
+   #block1{
+                height:100px;
+                background: blue;
+                margin:2%
+            }
+
+            use one id only 1 time one page
+  --------------------------------------------
+  4.Class selector
+
+  .block2{
+                margin:2%;
+                background: pink;
+                width:21%;
+                float:left;
+                height:200px;
+            }
+            use 1 class multiple time in 1 page
+  --------------------------------------
+  5.parent child selector
+ #myservice p{
+                margin:2%;
+                padding:50px 1% 50px;
+                float:left;
+                background: orange;
+                width:19%;
+            }
+  --------------------------------------------------          
+  6.attribute selector
+
+  input[type="text"]{
+                height:30px;
+                color:blue;
+                width:200px;
+
+            }
+  identify?
+  h1{ } - tag selector
+ h1,p,div() - group selector
+ div p{ } - parent child selector
+ #abc {}- id selector
+ .xyz{}- class selector
+ input[type="number"]{}- attribute selector
+=============== property list=========
+height - 3 type
+   height:200px; - it is fixed height.
+   min-height:200px; - min height is fixed, if content is more it will increase automatically
+   height:auto; - height is fully depends on contents
+
+---------------------------------------
+width  - 4 type
+
+width:px;
+width:%;
+min-width:px;
+max-width:px;
+---------------------------------------------
+
+background -9 types:
+
+background:red;
+background-color:red;
+background-color:rgb(100, 20, 200); range is 0 to 255
+background-color:rgba(100,20,200,0.5); - alpha range is 0.1 to 0.9 for brightness level
+background-image:linear-gradient( to red,blue,purple)---it wont mix the color and this is top to bottom.
+background-image:linear-gradient( to top, red,blue,purple);
+background-image:linear-gradient( to left, red,blue,purple);
+background-image:linear-gradient( to right, red,blue,purple);
+background-image:url('1.jpg');
+...........................................
+
+float - it convert from block level tag to inline tag
+     float:left; it print from left to right
+     float:right; it print from right to left
+
+
+     margin - it apply a space outside of tags
+       margin:auto; it prints center
+       margin:30px; it apply 30px gap from all side
+       margin-top:30px;
+       margin-bottom:30px;
+       margin-left:30px;
+       margin-right:30px;
+       margin:top left-right bottom;
+         ex as margin:40px 20px 60px;
+
+       padding - it apply space inside of container
+         padding:40px; it apply space from all side
+         padding-top:40px;
+         padding-bottom:40px;
+         padding-left:40px;
+         padding-right:40px;
+         padding:top left-right bottom ;
+
+         note: margin apply space outside of tag, padding apply space inside of tag.
+----------------------------------------------
+8 types of border
+  1.solid
+  2.dotted
+  3.dashed
+  4.inset
+  5.outset
+  6.ridge
+  7.double
+  8.groove
+
+  example:
+         border:10px solid red;
+
+----------------------------------------------     
+box-shadow:from left from top density color
+  as
+  box shadow:5px 10px 20px black
+----------------------------------------------
+display 
+   display:inline - it convert from block level to  inline tag.but height width do not apply
+   display:inline-block - it convert from level tag to inline, height will apply
+   display:node
+   display:block
+   disaply:flex
+   display:grid
+-----------------------------------------------
